@@ -13,3 +13,10 @@
 # Docker is about running apps inside containers
 
 # We call apps running in containers as containerized apps.
+
+
+# With Containers, we get to develop apps that are:
+- Modern
+- Scalable
+- Self-healing
+- Portable
