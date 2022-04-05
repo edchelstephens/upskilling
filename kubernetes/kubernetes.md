@@ -28,3 +28,7 @@ Then when things change, increased load, failed nodes, kubernetes deals with it.
 - Docker's doing all the low-level container spinning up, spinning down stuff,
   but it only does it when Kubernetes tells it to. Meaning in this respect,
   Kubernetes is managing a bunch of Docker nodes.
+
+# Kubernetes is all about managing containerized apps at scale and the focus is very much on the app.
+
+- It's the poster child for the [Cloud Native Computing Foundation](https://www.cncf.io/), the leading foundation driving the development and adoption of Cloud Native Technologies.
