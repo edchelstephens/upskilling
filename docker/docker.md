@@ -8,3 +8,4 @@
 - somebody who works in a doc or a shipping port is a docker
 
 - Docker provides the mechanics for starting, stopping and deleting containers
+- which is pretty low level stuff
