@@ -9,3 +9,7 @@
 # Containers are like fast lightweight virtual machines
 
 # and Docker makes running our apps inside of containers really easy
+
+# Docker is about running apps inside containers
+
+# We call apps running in containers as containerized apps.
