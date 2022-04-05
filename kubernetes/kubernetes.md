@@ -17,3 +17,6 @@ in kubernetes, hence "k8s"
 
 - Kubernetes is like the conductor of an opera
 - wherein the opera different musics, like drums, singers, are the containerized apps
+- Kubernetes basically issues commands to docker instances, telling them
+when to start and stop containers and how to run them. And just like the opera,
+when all these things come together, they form this amazing application experience.
