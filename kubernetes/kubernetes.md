@@ -24,3 +24,7 @@ in kubernetes, hence "k8s"
 # We tell Kubernetes what we want, and kubernetes makes it happen
 
 Then when things change, increased load, failed nodes, kubernetes deals with it.
+
+- Docker's doing all the low-level container spinning up, spinning down stuff,
+  but it only does it when Kubernetes tells it to. Meaning in this respect,
+  Kubernetes is managing a bunch of Docker nodes.
