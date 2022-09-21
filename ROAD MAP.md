@@ -22,9 +22,9 @@
 
 - Finish react courses
 
-## Python Core Mastery focus with Pluralsight
+## Python Core Mastery focus
 
-- Python Core learning path complete
+- Python Core learning path complete in Pluralsight
 - Automate Boring Stuff Book Completion
 - Python Docs 3.11 completion
 
@@ -34,6 +34,9 @@
 - Django Main Modules Redo
 - Django Rest Framework Review
 
+# Javascript Core Master focus
+- Javascript fundamentals and learning path in Pluralsight
+- Javascriptt docs on Mozilla Developer Network(MDN)
 # Postgresql
 
 - Postgresql pluralsight courses
