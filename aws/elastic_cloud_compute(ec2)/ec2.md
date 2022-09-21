@@ -13,3 +13,6 @@ some preinstalled applications, typically things like Java, Python or the AWS CL
 - Use EBS for EC2 file systems, add volumes with volume size
 - EBS is not the same as Simple Storage Service(S3)
 - EBS is specifically for using with EC2
+
+# Security Group
+- IP-based comunication rules for a single or group of EC2 instances
