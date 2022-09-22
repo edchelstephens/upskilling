@@ -23,7 +23,7 @@
 - Configuring each environment in Elastic Beanstalk is where you'll spend most of your time since you can setup the deployment, load balancing and scaling rules there.
 
 - elastic beanstalk provisions resources and runs your application
-
+- elastic beanstalk is using CloudFormation to accomplish it's resource provisioning under the hood
 # .ebextension files
 - JSON or YAML format files located in `.ebextension` folder of your application bundle
 - They must bo of `.config` file type and if there are multiple files, **ones that are first alphabetically are first applied**, meaning that they have the lowest precedence priority.
