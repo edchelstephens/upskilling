@@ -14,6 +14,7 @@
 - Application version is the actual code that will run your application
 - Application versions are stored in S3
 - Each application has a limit of 1000 versions, if you hit this limit then go and delete old uneeded versions of the application
+- Application versions are just versions of your whole app code
 
 # EB structure - Environment
 - With an application version of your code, you can deploy it to an "Environment"
