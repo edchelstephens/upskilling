@@ -6,3 +6,5 @@ software updates and infrastructure for the database
 - since this is managed, you can quickly 
     1. take snapshots of your data
     2. increase the size of the ec2 instance being used to back t he database
+
+- When you create a database instance on RDS, it creates an EC2 instance under the covers, installing an appropriate operating system and database engine like postgresql
