@@ -21,8 +21,7 @@
 - Each environment can run with a different platform, like Java or Node or python and can be configured with certain EC2 instance types.
 - Configuring each environment in Elastic Beanstalk is where you'll spend most of your time since you can setup the deployment, load balancing and scaling rules there.
 
-
-
+- elastic beanstalk provisions resources and runs your application
 
 # .ebextension files
 - JSON or YAML format files located in `.ebextension` folder of your application bundle
