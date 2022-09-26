@@ -3,6 +3,20 @@
 - vpc is commonly used when launching EC2 instances, wether in the service of Elastic Beanstalk, RDS or by themselves in order to easily secure and control access to them.
 - Inside of each VPC are one or more subnets
 - VPC is free in AWS, just use them in your aws services
+- VPC is a logically isolated piece of the AWS cloud, it's like your own private data center
+- The VPC is the foundation for all EC2 instances, meaning if you're going to use an EC2 or compute instance, all of the virtual machines offered by Amazon, you will be using a VPC
+- VPC is where you can define:
+    - Subnets
+    - IP address range for instances
+    - Access control to and from instances
+
+- VPC belongs to a region, it spans all availabilty zones
+- You can have multiple VPCs within the same region
+- VPCs contain one or more subnets
+    - a subnet is tied to a single availability zone
+    - ec2 instances launched into subnets
+
+
 # VPC subnets
 - futher way to group your resources and assign different rules to each
 for example:
