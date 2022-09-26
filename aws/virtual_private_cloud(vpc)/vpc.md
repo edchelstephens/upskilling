@@ -67,7 +67,14 @@ AN internet gateway can be associated with your VPC to provide access to the ext
 - If your private subnet neeeds access tot he external public internet, you can use a NAT gateway to provide that access.
 - A NAT gateway is a `Network Adress Translation(NAT) service. You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
 
+- VPC flow logs provide information about network connections both accepted and denied
 
+# Design Patterns for VPCs 
+- Internet-accessible VPC
+- VPC with public and private subnets
+- VPN access to private subnet
+- Internal-only VPC
+- VPC peering
 
 
 
