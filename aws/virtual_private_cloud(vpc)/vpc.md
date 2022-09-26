@@ -18,6 +18,40 @@
 
 - When you create an AWS account, Amazon creates a default VPC for you in each region. This allows you to launch virtual machines for the EC2 service withouth really having to configure or think about anything.
 
+## IPv4 address range required for VPC
+- This is specified using classless inter-domain rougint or CIDR blocks
+- In AWS, the allowed block size is between `/16` and `/28`.
+This translates to:
+`10.0.0.0/16` - 65,536 possible addressess(`10.0.0.0 - 10.0.255.255`)
+`10.0.0.0/28` - 16 possible addresses (`10.0.0.0 - 10.0.0.15`)
+
+For each subnet block, AWS reserves the first four and the last address.
+`10.0.0.0/20`
+// Reserved:
+10.0.0.0
+10.0.0.1
+10.0.0.2
+10.0.0.3
+10.0.15.255
+
+
+## Each subnet CIDR block must be a subset of your VPC CIDR and your subnets cannot overlap
+
+e.g 
+- VPC 10.0.0.0/16
+ - subnet 1: 10.0.0.0/20 (10.0.0.4 - 10.0.15.254)
+ - subnet 2: 10.0.16.0/20 (10.0.16.4 - 10.0.31.245)
+
+As you desing your VPCs, be sure that you have enough capacity for all instances that you will need to launch on in your VPC and subnets
+
+When instances are launched, their IP address is determined by the subnet CIDR.
+This external IP address is assigned by AWS form their pool of public IP addresses.
+If you stop your instance then start it again, this IP address can and usually does change.
+If you want to keep the same IP address for an instance that you know you will be stopping and starting,  you can use an `elastic IP`. An `elastic IP` stays assigned to an instance unti you unassign it.
+
+
+External IP addresses are not assigned by default
+You must specify if you want a public IP on instance creation.
 
 # VPC subnets
 - futher way to group your resources and assign different rules to each
