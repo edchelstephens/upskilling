@@ -15,6 +15,7 @@ It's auto-scaling, so there's no need to provision more to handle more traffic. 
 For Security;
 - support HTTPS termination and certificate management
 - SSL/TLS decryption
+- User authentication via direct connect to identity provider
 
 
 2. Network Load Balancer
@@ -23,6 +24,21 @@ For Security;
 - Millions of request per second
 - Very low latency
 - Long-lived TCP connections
+- Listeners:
+    - Protocol
+    - Port.
+
+Internall or externally facing
+Internal meaning only receiving raffic from your private subnets
+External meaning receiving traffic from the outside internet.
+You can define your listeners by protocol and port and indicate which availability zones your load balancer will service.
+
+The `target group` is how you identify where you will send the traffic, 
+be it instances, Lambdas, whatever it is that you're distributing the traffic to goes in the target group.
+
+
+
+
 
 ## TCP or Transmission Control Protocol
 - a communications standard that enables application programs and computing devices to exchange messages over a network. It is designed to send packets across the internet and ensure the successful delivery of data and messages over networks
