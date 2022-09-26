@@ -45,13 +45,31 @@ e.g
 As you desing your VPCs, be sure that you have enough capacity for all instances that you will need to launch on in your VPC and subnets
 
 When instances are launched, their IP address is determined by the subnet CIDR.
+
+External IP addresses are not assigned by default
+You must specify if you want a public IP on instance creation.
+
 This external IP address is assigned by AWS form their pool of public IP addresses.
 If you stop your instance then start it again, this IP address can and usually does change.
 If you want to keep the same IP address for an instance that you know you will be stopping and starting,  you can use an `elastic IP`. An `elastic IP` stays assigned to an instance unti you unassign it.
 
+# Ingress(entering) and Egress(leaving) Control
+- `Security Groups` are one of the most heavily used methods of determining allowed traffic to and from your instances. In security groups, you can specify ports, protocols, sources and desitnations that are aloowed to access your instance.
 
-External IP addresses are not assigned by default
-You must specify if you want a public IP on instance creation.
+- `Network Access Contorl Lists(NACL)` are also available to specify allow or deny rules for traffic in and out of a subnet. You can define a network access control list then associate one or more subnets with that control list.
+
+- VPC can also be peered to allow traffic to flow from one VPC to another as if they were in the same network
+
+- VPCs can be accessed via virtual private network(VPN).
+You can define route tables in your VPC to control traffic in and out of subnets.
+AN internet gateway can be associated with your VPC to provide access to the external public internet.
+
+- If your private subnet neeeds access tot he external public internet, you can use a NAT gateway to provide that access.
+- A NAT gateway is a `Network Adress Translation(NAT) service. You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
+
+
+
+
 
 # VPC subnets
 - futher way to group your resources and assign different rules to each
