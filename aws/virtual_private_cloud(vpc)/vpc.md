@@ -16,6 +16,8 @@
     - a subnet is tied to a single availability zone
     - ec2 instances launched into subnets
 
+- When you create an AWS account, Amazon creates a default VPC for you in each region. This allows you to launch virtual machines for the EC2 service withouth really having to configure or think about anything.
+
 
 # VPC subnets
 - futher way to group your resources and assign different rules to each
