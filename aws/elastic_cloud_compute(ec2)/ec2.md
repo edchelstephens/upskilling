@@ -16,3 +16,9 @@ some preinstalled applications, typically things like Java, Python or the AWS CL
 - EC2 is actually used under the covers by other AWS services such as AWS Relational Database Service(RDS)
 # Security Group
 - IP-based comunication rules for a single or group of EC2 instances
+
+# Elastic Network Interfaces or ENI
+- ENIs are how everything connects into the VPC
+- ENIs are subnet based
+- EC2 instances always have an ENI, this is called primary ENI
+- The primary ENI is given the device naming eth0 and it cannot be removed

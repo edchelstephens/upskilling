@@ -89,3 +89,12 @@ The private subnet would house your database and application instances.
 The private subnet would have no access to the internet at all, keeping it quite secure
 
 The public subnet, on the other hand, would have access tot he internet and could utilize security groups to make it secure.
+
+
+# Dynamic Host Configuration Protocol  or DHCP 
+- a client/server protocol that automatically provides an Internet Protocol(IP) host with its IP adddress and other related configuration information such as the subnet mas and default gateway.
+- it is a network management protocol used on INternet Porotocl(IP) networks for automatically assigning IP addresses and other communication parameters to devices connected to the network using a client-server architecture
+
+# Domain Name System
+- The domain name system is the hierarchical and decentralized naming system used to identify computers reachable through the internet or Internet Protocol (IP) networks. The resource records contained in the DNS associate domain names with other forms of information.
+- DNS translates human readable domain names(e.g www.amazon.com) to machine readable IP addresses(192.0.2.44)
