@@ -134,3 +134,9 @@ Each subnet can enable or disable auto-assignment of a public IP.
 
 An EC2 instance is assigned a private IP for the life of the instance, this private IP will not change.
 
+# Elastic IP(EIP)
+- were created to solve the problem of external IP addresses changing when you stop or restart your instance.
+- An EIP is a public IP address assigned to your instance until you release it. It will stay the same wether your machine stops or restarts or stays running.
+- You can use one EIP per running instance for free. As long as the instance is not running, you will not be charged anything extra for using a single EIP.
+- Elastic IP addresses are static IP addresses designed for dynamic cloud computing.
+- Charged per EIP not assigned to a running instance.
