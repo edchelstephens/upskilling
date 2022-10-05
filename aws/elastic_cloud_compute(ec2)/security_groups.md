@@ -114,13 +114,23 @@ Scenario:
 - Can NOT be addressed directly from outside the internet. There is no route to get to that from another machine outside of the VPC
 - Based on subnet CIDR block
 - The CIDR block that you assign to a subnet determines how many internal IP addresses are available in that subnet and consequently how many instance you can launch in that subnet.
+- Addressable from inside VPC only
+- Stays the same for lifetime of instance
+- Based on subnet CIDR. You will know exactly what range of IP addresses are valid and can be assigned to instances in your subnet.
+- Assigned to all instances
 
 2. External IP
 - Can be addressed directly from outside internet. There will be a route from a machine outside of the VPC or outside of the AWS cloud to eventually end up at that instance.
 - External ips are pulled from AWS pool of external IP addresses
+- Addressable from outside of VPC
+- Can change on instance stop or restart
+- Can vary widely as it is pulled from an AWS pool of external IP addresses
+- Only assigned on launch if it is enabled
+
 
 When you launch an ec2 instance, you must either have auto-assign IP address enabled or explicitly check that, in order to have an external IP assigned to your instance.
 
 Each subnet can enable or disable auto-assignment of a public IP.
 
 An EC2 instance is assigned a private IP for the life of the instance, this private IP will not change.
+
