@@ -47,3 +47,16 @@ This can be helfpul to combine certain configurations and get sine reusability f
 3. Individual rules in your security group can be modified
 
 4. Any changes you make to the security group are applied immediately
+
+
+# Security Group Rules
+
+## Rule Composition
+1. Type A type is a predefined protocol and port combination
+2. Protocol, rules define the protocol of the traffic, e.g. 
+- TCP(Transmission control protocol )
+- UDP(User Datagram Protocol) 
+- ICMP(Internet Control Message Protocol)
+3. Port Range, specifies which ports are allowed as part of the rule
+
+
