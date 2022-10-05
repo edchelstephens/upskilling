@@ -87,3 +87,4 @@ When a client attempts to connect to a server and make a request, it needs to kn
 # Security Group Rule Description
 - Acts as documentation. Your future self will thank you!
 - Always document explicitly describing what this security group is for!
+- Clear descriptions on your security group helps you maintain a more up-to-date and secure security group
