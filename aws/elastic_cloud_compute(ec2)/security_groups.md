@@ -101,3 +101,9 @@ When a client attempts to connect to a server and make a request, it needs to kn
 Scenario:
 1. Can't download patches to ec2 instance or ping google.com but return response from http server on machine still works
 - Security group rules are stateful. Inbound rule allows port 80 so response is automatically allowed regardless of outbound rules.
+
+
+# Security Group Housekeeping
+1. EC2 Launc wizard
+- Must select security group or it will create a new one each time
+- If you need to create a new one, then add meaningful names and description
