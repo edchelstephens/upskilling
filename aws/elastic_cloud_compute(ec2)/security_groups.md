@@ -83,3 +83,7 @@ Examples:
 Port 80 is the port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP). It is the default network port used to send and receive unencrypted web pages.
 
 When a client attempts to connect to a server and make a request, it needs to know both the server's IP address and which network service will be used to transfer data. To make it convenient for programmers, most popular network services are assigned "well-known" port numbers by default. This strategy began back in 1991 when Tim Berners-Lee's original specification for HTTP stated that if there was no port assigned to an HTTP connection, Port 80 should be used.
+
+# Security Group Rule Description
+- Acts as documentation. Your future self will thank you!
+- Always document explicitly describing what this security group is for!
