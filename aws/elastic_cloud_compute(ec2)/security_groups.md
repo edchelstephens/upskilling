@@ -94,3 +94,10 @@ When a client attempts to connect to a server and make a request, it needs to kn
 - It's named `default` and it is created for each VPC
 - It allows inbound traffic from the same security group and all outbound traffic
 - However no inbound traffic from outside of the security group is allowed in the default security group. This is usually the source of most problems
+
+# Security Group Outbound Access
+-Allows all outbound access from EC2, like downloading updates from anywhere in the internet into the ec2 instance, pinging google.com, etc. Access restricted if outbound rule is removed or changed.
+
+Scenario:
+1. Can't download patches to ec2 instance or ping google.com but return response from http server on machine still works
+- Security group rules are stateful. Inbound rule allows port 80 so response is automatically allowed regardless of outbound rules.
