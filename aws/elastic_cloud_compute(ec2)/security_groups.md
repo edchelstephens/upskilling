@@ -88,3 +88,9 @@ When a client attempts to connect to a server and make a request, it needs to kn
 - Acts as documentation. Your future self will thank you!
 - Always document explicitly describing what this security group is for!
 - Clear descriptions on your security group helps you maintain a more up-to-date and secure security group
+
+
+# Default Security Group
+- It's named `default` and it is created for each VPC
+- It allows inbound traffic from the same security group and all outbound traffic
+- However no inbound traffic from outside of the security group is allowed in the default security group. This is usually the source of most problems
