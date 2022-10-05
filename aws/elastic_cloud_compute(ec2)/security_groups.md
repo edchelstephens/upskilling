@@ -59,7 +59,7 @@ This can be helfpul to combine certain configurations and get sine reusability f
 - ICMP(Internet Control Message Protocol)
 3. Port Range, specifies which ports are allowed as part of the rule
 
-
+- In general, you want to add a new rule for your new use case if you are not certain what the current rules are doing. Or else you will be closing some needed connections between the instances.
 ## Source/Destination
 - You can specify a few different things as a source or destination of a rule
 1. You can use a security group
