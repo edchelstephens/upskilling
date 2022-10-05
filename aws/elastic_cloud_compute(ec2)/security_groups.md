@@ -18,3 +18,20 @@ A security group is a virtual firewall for your EC2 instance to control inbound 
 
 - When troubleshooting access problems, often it is helpful to begin at the security group
 then work your way up the stack looing for problems in your configuration
+
+# Security Group vs Network Access Control List(NACL)
+
+## Security Group
+- operates at instance level and is assigned to individual instances
+- Allow rules only
+- evaluate all rules before allowing traffic - All
+- Stateful: return traffic automatically allowed regardless of any rules,
+for example, if you had an allow rule on port 80 to let traffic in,
+any response would be allowed to go out regardless of any outbound rule or lack of rules
+- Applies to instance only if instance is associated with security group. It could be possible to create an instance and forget to associate it with the correct security groups, be careful on this one!
+# NACL
+- operates at subnet level. You don't have to remember to assing an instance to it.
+- Allow or deny rules
+- Rules are processed in numeric order until there is a match - Any
+- Stateless: return traffic must be explicitly allowed by rules. Just because there was an allow rule inbound does not automatically allow that same traffic to go outbound 
+- Automatically applies to all instances in subnets associated with the NACL
