@@ -15,3 +15,6 @@ A security group is a virtual firewall for your EC2 instance to control inbound 
 4. Then next is Network Access Control List or NACL
 5. Finally, the traffic will go to the instance Security Group and specifically the inbound rule of the security group
 6. If the traffic is allowed by the inbound rule, then and only then, will it go to the instance.
+
+- When troubleshooting access problems, often it is helpful to begin at the security group
+then work your way up the stack looing for problems in your configuration
