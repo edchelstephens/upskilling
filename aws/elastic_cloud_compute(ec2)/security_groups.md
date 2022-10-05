@@ -120,3 +120,5 @@ Scenario:
 - External ips are pulled from AWS pool of external IP addresses
 
 When you launch an ec2 instance, you must either have auto-assign IP address enabled or explicitly check that, in order to have an external IP assigned to your instance.
+
+Each subnet can enable or disable auto-assignment of a public IP.
