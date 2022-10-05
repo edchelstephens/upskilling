@@ -107,3 +107,13 @@ Scenario:
 1. EC2 Launc wizard
 - Must select security group or it will create a new one each time. To avoid creating pages and pages of launch wizard security groups, first check and see if an existing security group will work for what you are doing and use that security group.
 - If you need to create a new one, then add meaningful names and description
+
+
+# Instance IP Assignment
+1. Internal IP
+- Can NOT be addressed directly from outside the internet. There is no route to get to that from another machine outside of the VPC
+- Based on subnet CIDR block
+- The CIDR block that you assign to a subnet determines how many internal IP addresses are available in that subnet and consequently how many instance you can launch in that subnet.
+
+2. External IP
+- 
