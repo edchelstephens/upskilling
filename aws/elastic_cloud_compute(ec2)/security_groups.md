@@ -69,4 +69,8 @@ This can be helfpul to combine certain configurations and get sine reusability f
         - The range of IP addresses from a certain subnet in your VPC
         - Single IP address of a person or machine that needs to have access through that security group. For a single IPv4 address, use `/32` at the end, and for a single IPv6 address, use `/128`
 
-    
+Examples:
+ 1. Inbound rule on port `80` with  `0.0.0.0/0` as a source means any source.
+    - Anything from anywhere can access port 80 on this machine with this rule
+
+
