@@ -105,5 +105,5 @@ Scenario:
 
 # Security Group Housekeeping
 1. EC2 Launc wizard
-- Must select security group or it will create a new one each time
+- Must select security group or it will create a new one each time. To avoid creating pages and pages of launch wizard security groups, first check and see if an existing security group will work for what you are doing and use that security group.
 - If you need to create a new one, then add meaningful names and description
