@@ -18,7 +18,7 @@ A security group is a virtual firewall for your EC2 instance to control inbound 
 
 - When troubleshooting access problems, often it is helpful to begin at the security group
 then work your way up the stack looing for problems in your configuration
-
+- Sometimes the NACL is okay but there are certain security groups that blocks access so check on security groups first.
 # Security Group vs Network Access Control List(NACL)
 
 ## Security Group
