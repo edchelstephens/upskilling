@@ -64,15 +64,21 @@ This can be helfpul to combine certain configurations and get sine reusability f
 - You can specify a few different things as a source or destination of a rule
 1. You can use a security group
     - This will be the ID of another security group in your VPC or a peered VPC.
+    - When you set a security group as a source or destination, you are saying that, 
+    any machine that is assigned to that security group can then have access over the port and protocol that you've defined and allowed through that rule.
 2. IP Address
     - IPv4 or IPv6 CIDR(Classless Inter-Domain Routing) blocks e.g.: 
         - The range of IP addresses from a certain subnet in your VPC
         - Single IP address of a person or machine that needs to have access through that security group. For a single IPv4 address, use `/32` at the end, and for a single IPv6 address, use `/128`
 
+- Outbound rules follow the same format as inbound rules, only that it uses Destination instead of Source
+
 Examples:
  1. Inbound rule on port `80` with  `0.0.0.0/0` as a source means any source.
     - Anything from anywhere can access port 80 on this machine with this rule
-    
+
+
+
 # Port 80
 Port 80 is the port number assigned to commonly used internet communication protocol, Hypertext Transfer Protocol (HTTP). It is the default network port used to send and receive unencrypted web pages.
 
