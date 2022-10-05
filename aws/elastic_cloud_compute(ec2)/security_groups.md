@@ -60,3 +60,13 @@ This can be helfpul to combine certain configurations and get sine reusability f
 3. Port Range, specifies which ports are allowed as part of the rule
 
 
+## Source/Destination
+- You can specify a few different things as a source or destination of a rule
+1. You can use a security group
+    - This will be the ID of another security group in your VPC or a peered VPC.
+2. IP Address
+    - IPv4 or IPv6 CIDR(Classless Inter-Domain Routing) blocks e.g.: 
+        - The range of IP addresses from a certain subnet in your VPC
+        - Single IP address of a person or machine that needs to have access through that security group. For a single IPv4 address, use `/32` at the end, and for a single IPv6 address, use `/128`
+
+    
