@@ -35,3 +35,15 @@ any response would be allowed to go out regardless of any outbound rule or lack 
 - Rules are processed in numeric order until there is a match - Any
 - Stateless: return traffic must be explicitly allowed by rules. Just because there was an allow rule inbound does not automatically allow that same traffic to go outbound 
 - Automatically applies to all instances in subnets associated with the NACL
+
+# Using security groups
+- Security groups are dynamic
+
+1. You can assign multiple security groups to an instance.
+This can be helfpul to combine certain configurations and get sine reusability from your security group definitions.
+
+2. You can change the security group(s) assigned to an instance at any time.
+
+3. Individual rules in your security group can be modified
+
+4. Any changes you make to the security group are applied immediately
