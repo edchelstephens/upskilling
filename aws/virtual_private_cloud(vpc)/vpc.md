@@ -120,3 +120,6 @@ The public subnet, on the other hand, would have access tot he internet and coul
 
 2. Always pick your SPECIFIC Availablity Zone! 
     - Never just use the recommended availability zones, be explicit!
+
+3. Create own internet gateway, route table with meaningful names, etc
+    - 0.0.0.0/0 IPv4 destination or prefix matches any IP address that is not explicitly in the route table
