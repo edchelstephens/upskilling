@@ -98,3 +98,17 @@ The public subnet, on the other hand, would have access tot he internet and coul
 # Domain Name System
 - The domain name system is the hierarchical and decentralized naming system used to identify computers reachable through the internet or Internet Protocol (IP) networks. The resource records contained in the DNS associate domain names with other forms of information.
 - DNS translates human readable domain names(e.g www.amazon.com) to machine readable IP addresses(192.0.2.44)
+
+
+# Why Separate Public and Private VPCs?
+
+1. Security.
+-  The primary reason you want to place public web servers privaet back-end database servers into separate VPCs is security. You want to protect private back-end servers from the internet.
+
+2. Scalabiblity
+
+
+## Private VPC
+- Isolate instances from the internet, wehther it having access to the internet or it being accessible from the internet.
+- You also want to isolate instances from other instances
+- Isolate instances from on-premise networks
