@@ -123,3 +123,12 @@ The public subnet, on the other hand, would have access tot he internet and coul
 
 3. Create own internet gateway, route table with meaningful names, etc
     - 0.0.0.0/0 IPv4 destination or prefix matches any IP address that is not explicitly in the route table
+
+
+
+    # Traffic from Instance to the Internet
+   1. When traffic from an instance needs to go to the internet, the instance consults ints internal routing table and uses the default route which points to the implied router(the router table).  A route table and an implied router are essentially the same thing!
+
+   2. The implied router then consult sits VPC route table, sees that it has a default route pointing to the internet gateway and sends the traffic there.
+
+   3. Somewhere a long the way, a NAT process translates the source address from the instance's private IP address to the public elastic IP address.
