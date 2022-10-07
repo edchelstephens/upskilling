@@ -132,3 +132,7 @@ The public subnet, on the other hand, would have access tot he internet and coul
    2. The implied router then consult sits VPC route table, sees that it has a default route pointing to the internet gateway and sends the traffic there.
 
    3. Somewhere a long the way, a NAT process translates the source address from the instance's private IP address to the public elastic IP address.
+
+
+   # Public subnet for web server and Private subnet for database server
+   - They shoud be in the same availability zone for accessibility and also, it will incur much cost, generally about 1 cent per GB
