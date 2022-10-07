@@ -117,3 +117,6 @@ The public subnet, on the other hand, would have access tot he internet and coul
 
 1. Resist the temptation to go with the default settings
 - The Defualt Is(usually) the Enemy
+
+2. Always pick your SPECIFIC Availablity Zone! 
+    - Never just use the recommended availability zones, be explicit!
