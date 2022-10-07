@@ -136,3 +136,5 @@ The public subnet, on the other hand, would have access tot he internet and coul
 
    # Public subnet for web server and Private subnet for database server
    - They shoud be in the same availability zone for accessibility and also, it will incur much cost, generally about 1 cent per GB
+
+   # A subnet can only be in one and only one availability zone
