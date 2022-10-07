@@ -112,3 +112,8 @@ The public subnet, on the other hand, would have access tot he internet and coul
 - Isolate instances from the internet, wehther it having access to the internet or it being accessible from the internet.
 - You also want to isolate instances from other instances
 - Isolate instances from on-premise networks
+
+# Creating VPCs
+
+1. Resist the temptation to go with the default settings
+- The Defualt Is(usually) the Enemy
