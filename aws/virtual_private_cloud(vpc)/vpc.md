@@ -134,10 +134,16 @@ The public subnet, on the other hand, would have access tot he internet and coul
    3. Somewhere a long the way, a NAT process translates the source address from the instance's private IP address to the public elastic IP address.
 
 
-   # Public subnet for web server and Private subnet for database server
+# Subnets
+ ## Public subnet for web server and Private subnet for database server
    - They shoud be in the same availability zone for accessibility and also, it will incur much cost, generally about 1 cent per GB
 
-   # A subnet can only be in one and only one availability zone
-   # A subnet is also only associated on one and only one route table
-   # A route table can have one or more routes.
-   # A route consists of a destination IP subnet and a target.
+   - A subnet can only be in one and only one availability zone
+   - A subnet is also only associated on one and only one route table
+   - A route table can have one or more routes.
+   - A route consists of a destination IP subnet and a target.
+
+   # VPC Peering
+   - Allows instance to instance communication between 2 VPCs
+   - Not an all-purpose network connection
+   - An instance in a VPC cannot use the Internet gateway of another peered vpc. An instance in vpc cannot use any resource to a paired instance of another vpc. It's just instance-to-instance communication
