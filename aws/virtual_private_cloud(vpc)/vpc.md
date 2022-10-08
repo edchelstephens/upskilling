@@ -138,3 +138,6 @@ The public subnet, on the other hand, would have access tot he internet and coul
    - They shoud be in the same availability zone for accessibility and also, it will incur much cost, generally about 1 cent per GB
 
    # A subnet can only be in one and only one availability zone
+   # A subnet is also only associated on one and only one route table
+   # A route table can have one or more routes.
+   # A route consists of a destination IP subnet and a target.
