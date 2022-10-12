@@ -158,3 +158,14 @@ The public subnet, on the other hand, would have access tot he internet and coul
 
    # BGP(Border Gateway Protocl)
    - the protocol underlying the global routing system of the internet. It manages how packets get routed from network to network through the exchange of routing and reachability information among edge routers
+
+   # Gateway Comparisons
+
+   1. Internet gateway
+   - Allows inbound and outbound IPv4 and IPv6 traffic
+
+   2. NAT instance or NAT gateway
+   - Allows outbound-only IPv4 traffic or access via an internet gateway
+
+   3. Egress-only internet gateway
+   - Allows oubtound-only IPv6 traffic and there's no NAT involved
