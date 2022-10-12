@@ -45,7 +45,7 @@ Tree structure:
 `example`
 `web`
 
-- There is actually one more label, which is a null zerolength label a the root of the tree. This is called the root label and it's ofent represented as just a dot `.` This is always implied.
+- There is actually one more label, which is a null zerolength label a the root of the tree. This is called the root label and it's ofent represented as just a dot `.` This is always implied. The name server that contains the root `.` is called the root name server.
 
 So the actual tree structure, with domain name:
 
