@@ -151,4 +151,7 @@ The public subnet, on the other hand, would have access tot he internet and coul
    # Flow
    A unidirectional stream of packets that share a common source IP and port, destination IP and port, and protocol.
 
+   # 5 Tuple
+   - source and destination IP addresses, ports and protocol
+
    # In networking, a packet is a small segment of a larger message. Data sent over computer networks, such as the internet is divided into packets. Tehse packets are then recombinded by the computer or device that receives them.f
