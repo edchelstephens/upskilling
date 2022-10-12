@@ -147,3 +147,8 @@ The public subnet, on the other hand, would have access tot he internet and coul
    - Allows instance to instance communication between 2 VPCs
    - Not an all-purpose network connection
    - An instance in a VPC cannot use the Internet gateway of another peered vpc. An instance in vpc cannot use any resource to a paired instance of another vpc. It's just instance-to-instance communication
+
+   # Flow
+   A unidirectional stream of packets that share a common source IP and port, destination IP and port, and protocol.
+
+   # In networking, a packet is a small segment of a larger message. Data sent over computer networks, such as the internet is divided into packets. Tehse packets are then recombinded by the computer or device that receives them.
