@@ -63,3 +63,8 @@ The entire tree structure is called the `Domain Name Space`. Every node connecte
 
 - You can use `google.com.` or just `google.com`
 the root domain `.` is implied.
+
+# DNS is a database for storing resource records.
+# DNS is scalable in 2 respects:
+1. Can store an increasing and ever changing set of nodes
+2. It's not necessarily controlled by a single person or group
